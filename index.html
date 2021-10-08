@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="">
+
+        <div class="order">
+            <div class="order-header">
+                <h1 class="order-title">Your Order</h1>
+                <p class="order-info">Payment Data</p>
+                <div class="order-price">$199.00</div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <label class="radio">
+                        <input type="radio" name="cards">
+                        <span>Credit Card</span>
+                    </label>
+                </div>
+    
+                <div class="col">
+                    <label class="radio">
+                        <input type="radio" name="cards">
+                        <span>PayPal</span>
+                    </label>
+                </div>
+
+                <div class="row">
+                    <label class="title" for="num">Card Number:</label>
+                    <input type="number" id="num" placeholder="0000  0000  0000  0000">
+                </div>
+
+                <div class="cards-info">
+                    <div class="card-value">
+                        <label class="title" for="name">Name on Card:</label>
+                        <input class="name-card" type="text" id="name" placeholder="John Smith">
+                    </div>
+
+                    <div class="card-value">
+                        <label class="title" for="date">Expiry Date:</label>
+                        <select class="date" name="" id="date">
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                        </select>
+                    </div>
+
+                    <div class="card-value">
+                        <label class="title" for="cvv">CVV:</label>
+                        <input class="cvv" type="text" id="cvv" placeholder="000">
+                    </div>
+                
+                </div>
+
+                <div class="row">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span>Save card on file</span>
+                    </label>
+                </div>
+
+                <div class="row">
+                    <label class="labale-file" for="file-input">
+                    <div class="file-upload">
+                        <span class="logo">
+                            <svg  viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.3">
+                                <path d="M34 59.5C48.0833 59.5 59.5 48.0833 59.5 34C59.5 19.9167 48.0833 8.5 34 8.5C19.9167 8.5 8.5 19.9167 8.5 34C8.5 48.0833 19.9167 59.5 34 59.5Z" stroke="#2C2C2C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M34 46.75V21.25" stroke="#2C2C2C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M34 21.25L24.4375 30.8125" stroke="#2C2C2C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M34 21.25L43.5625 30.8125" stroke="#2C2C2C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                            </svg>
+                        </span>
+                        <input class="hide" type="file" id="file-input">
+                        <h3>Add Files</h3>
+                        <p>Drag & Drop to upload or</p>
+                    </div>
+                    </label>
+                </div>
+
+                <div class="row">
+                    <button class="btn">Submit Order</button>
+                </div>
+
+
+
+        </div>
+
+    </form>
+</body>
+</html>
